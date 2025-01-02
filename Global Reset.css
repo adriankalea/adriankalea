@@ -1,0 +1,118 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #F4F1E1; /* Beige background */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('floral-pattern.png'); /* Your floral pattern */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    color: #4A4A4A;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6C4F3D; /* Muted brown/pink tone */
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #B78E8C; /* Soft rose pink on hover */
+}
+
+/* Main Section Styling */
+main {
+    padding: 40px 20px;
+    flex-grow: 1;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #6C4F3D;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    color: #6C4F3D;
+    font-size: 0.9rem;
+}
+
+/* Button Styling */
+button {
+    background-color: #B78E8C; /* Soft rose pink */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #D4A1A0; /* Lighter pink */
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
