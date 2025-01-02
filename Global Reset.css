@@ -29,7 +29,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Vijaya', serif; /* Set Vijaya for the title */
+    font-family: 'Merriweather', serif; /* Set Merriweather for the title */
     color: #4A4A4A;
     font-size: 2.5rem;
     margin-bottom: 10px;
