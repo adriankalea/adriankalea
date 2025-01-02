@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Default to Arial for body text */
     background: #F4F1E1; /* Beige background */
     color: #333;
     line-height: 1.6;
@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('floral-pattern.png'); /* Your floral pattern */
+    background-image: url('floral-pattern.png'); /* Your floral pattern (remove if not used) */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -29,6 +29,7 @@ header {
 }
 
 header h1 {
+    font-family: 'Vijaya', serif; /* Set Vijaya for the title */
     color: #4A4A4A;
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -63,6 +64,7 @@ section {
 }
 
 h2 {
+    font-family: 'Vijaya', serif; /* Set Vijaya for section titles */
     color: #6C4F3D;
     font-size: 2rem;
     margin-bottom: 10px;
@@ -97,6 +99,13 @@ button:hover {
     background-color: #D4A1A0; /* Lighter pink */
 }
 
+/* Add responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     header h1 {
         font-size: 2rem;
     }
@@ -106,6 +115,9 @@ button:hover {
     }
 
     h2 {
+        font-size: 1.5rem;
+    }
+}
         font-size: 1.5rem;
     }
 }
