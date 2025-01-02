@@ -7,16 +7,16 @@
 
 body {
     font-family: 'Arial', sans-serif; /* Default to Arial for body text */
-    background: #F4F1E1; /* Beige background */
+    background-image: url('pretty-background.png'); /* Add your background image here */
+    background-size: cover;  /* Make sure the background covers the whole page */
+    background-repeat: no-repeat;  /* Prevent repeating the image */
+    background-position: center;  /* Center the background image */
     color: #333;
     line-height: 1.6;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('floral-pattern.png'); /* Your floral pattern (remove if not used) */
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* Header Styling */
@@ -115,9 +115,6 @@ button:hover {
     }
 
     h2 {
-        font-size: 1.5rem;
-    }
-}
         font-size: 1.5rem;
     }
 }
