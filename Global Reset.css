@@ -7,28 +7,26 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('https://github.com/adriankalea/adriankalea/raw/main/pretty%20background.png?raw=true'); /* Background image */
-    background-size: cover; /* Ensures image covers the entire body */
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('https://github.com/adriankalea/adriankalea/raw/main/pretty%20background.png?raw=true') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     line-height: 1.6;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-attachment: fixed;  /* Keeps the background image fixed while scrolling */
 }
 
-/* Header Styling */
-header {
-    background: linear-gradient(to bottom, rgba(244, 241, 225, 0.9), rgba(244, 241, 225, 0));  /* Subtle fade at the top */
+/* Header and Footer Styling */
+header, footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     padding: 20px 0;
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
+/* Header Title Styling */
 header h1 {
     font-family: 'Rastanty Cortez', 'Georgia', serif;
     color: #4A4A4A;
@@ -36,6 +34,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Navigation Menu */
 nav ul {
     list-style: none;
     display: flex;
@@ -72,14 +71,6 @@ h2 {
 }
 
 /* Footer Styling */
-footer {
-    background: linear-gradient(to top, rgba(244, 241, 225, 0.9), rgba(244, 241, 225, 0));  /* Subtle fade at the bottom */
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-}
-
 footer p {
     color: #6C4F3D;
     font-size: 0.9rem;
