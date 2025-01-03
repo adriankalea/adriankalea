@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url('https://github.com/adriankalea/adriankalea/raw/main/pretty%20background.png?raw=true');  /* Your image */
+    background-image: url('https://github.com/adriankalea/adriankalea/raw/main/pretty%20background.png?raw=true');  /* Your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
