@@ -35,6 +35,26 @@ header h1 {
     color: #4A4A4A;
 }
 
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6C4F3D; /* Muted brown/pink tone */
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #B78E8C; /* Soft rose pink on hover */
+}
+
 /* Main Section Styling */
 main {
     padding: 40px 20px;
@@ -85,16 +105,31 @@ footer p {
     }
 
     /* For header smaller text in row layout (four items in a row) */
-    header h1 + div {
+    header h1 + nav {
         display: flex; /* Make them appear in a row */
         justify-content: space-evenly; /* Distribute evenly */
         flex-wrap: wrap; /* Allow wrapping */
+        padding: 0;
     }
 
-    /* Optional: Style the individual items in the header */
-    header h1 + div > * {
-        flex: 1;
-        text-align: center;
+    /* Ensure no bullets in nav */
+    nav ul {
+        list-style: none; /* Remove bullets */
+        padding: 0; /* Reset padding */
+    }
+
+    nav li {
+        display: inline-block; /* Display as inline-block for row */
+    }
+
+    nav a {
+        color: #6C4F3D; /* Muted brown/pink tone */
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #B78E8C; /* Soft rose pink on hover */
     }
 
     /* Change body background from fixed to scroll on mobile */
