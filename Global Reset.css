@@ -18,42 +18,23 @@ body {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    background-color: #f4f4f4; /* Fallback background color before image loads */
-    transition: background-color 1s ease-in-out; /* Smooth transition for the background */
-    height: 100vh; /* Full height */
-    overflow: hidden; /* Prevent body from overflowing */
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-/* Apply custom font to larger text elements */
-h1, h2, h3, h4, h5, h6, main {
-    font-family: 'Rastanty Cortez', 'Georgia', serif;
-}
-
-/* Header and Footer Styling (Fixed Position for larger screens) */
+/* Header and Footer Styling */
 header, footer {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     padding: 20px 0;
     text-align: center;
-    position: fixed; /* Fixed on larger screens */
+    z-index: 1;
     width: 100%;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    box-sizing: border-box;
-}
-
-header {
-    top: 0;
-}
-
-footer {
-    bottom: 0;
 }
 
 /* Header Title Styling */
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
     color: #4A4A4A;
 }
 
@@ -79,16 +60,13 @@ nav a:hover {
 /* Main Section Styling */
 main {
     padding: 40px 20px;
-    margin-top: 80px; /* Space for header */
-    margin-bottom: 80px; /* Space for footer */
     flex-grow: 1;
-    overflow-y: auto; /* Allow scrolling content */
     line-height: 1.8;
 }
 
 /* Apply spacing between paragraphs */
 main p {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Adds space between paragraphs */
 }
 
 /* Large headings in the body section */
@@ -117,11 +95,11 @@ button:hover {
     background-color: #D4A1A0; /* Lighter pink */
 }
 
-/* Add responsiveness - Make header/footer non-fixed on mobile */
+/* Add responsiveness */
 @media (max-width: 768px) {
-    header, footer {
-        position: relative; /* Non-fixed on mobile */
-        background-color: rgba(255, 255, 255, 1); /* Make background solid */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
     header h1 {
@@ -129,14 +107,7 @@ button:hover {
     }
 
     main {
-        padding: 20px; /* Add padding for mobile */
-        margin-top: 0; /* No margin needed since header is now static */
-        margin-bottom: 0; /* No margin needed for footer */
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+        padding: 20px;
     }
 
     h2 {
