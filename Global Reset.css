@@ -9,7 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     background: 
         linear-gradient(to top, rgba(244, 241, 225, 1), rgba(244, 241, 225, 0)),  /* Fade effect at the top */
-        url('https://github.com/adriankalea/adriankalea/blob/main/5.png?raw=true');  /* Your image */
+        url('https://github.com/adriankalea/adriankalea/raw/main/5.png?raw=true');  /* Your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
