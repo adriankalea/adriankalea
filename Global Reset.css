@@ -20,6 +20,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f4f4f4; /* Fallback background color before image loads */
+    transition: background-color 1s ease-in-out; /* Smooth transition for the background */
 }
 
 /* Header and Footer Styling */
@@ -62,6 +64,12 @@ nav a:hover {
 main {
     padding: 40px 20px;
     flex-grow: 1;
+    font-family: 'Rastanty Cortez', 'Georgia', serif; /* Applying font to the main content */
+}
+
+/* Large headings in the body section */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rastanty Cortez', 'Georgia', serif;
 }
 
 /* Footer Styling */
