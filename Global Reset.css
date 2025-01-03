@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -73,7 +73,7 @@ main {
 
 /* Apply spacing between paragraphs */
 main p {
-    margin-bottom: 20px; /* Adds space between paragraphs */
+    margin-bottom: 40px; /* Adds space between paragraphs */
 }
 
 /* Large headings in the body section */
