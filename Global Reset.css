@@ -35,7 +35,9 @@ header, footer {
     padding: 20px 0;
     text-align: center;
     position: relative;
-    z-index: 1;
+    z-index: 2; /* Ensures header/footer stay above other content */
+    width: 100%; /* Ensures they span the full width */
+    box-sizing: border-box; /* Keeps padding from affecting the width */
 }
 
 /* Header Title Styling */
