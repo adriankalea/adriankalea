@@ -42,12 +42,14 @@ header, footer {
     box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
+/* Position header at the top */
 header {
-    top: 0; /* Position at the top of the page */
+    top: 0;
 }
 
+/* Position footer at the bottom */
 footer {
-    bottom: 0; /* Position at the bottom of the page */
+    bottom: 0;
 }
 
 /* Header Title Styling */
