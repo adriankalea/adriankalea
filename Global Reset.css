@@ -9,8 +9,9 @@
 body {
     font-family: 'Arial', sans-serif;
     background: url('https://github.com/adriankalea/adriankalea/raw/main/pretty%20backgroud.png') no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover;  /* Ensure the background image covers the entire body */
     background-position: center;
+    background-repeat: no-repeat;
     color: #333;
     line-height: 1.6;
     padding: 0;
@@ -19,9 +20,9 @@ body {
     min-height: 100vh;
 }
 
-/* Header and Footer Styling - Subtle Fade with Background Image */
+/* Header and Footer Styling */
 header, footer {
-    background: rgba(255, 255, 255, 0.6);  /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     padding: 20px 0;
     text-align: center;
     position: relative;
@@ -59,17 +60,6 @@ nav a:hover {
 main {
     padding: 40px 20px;
     flex-grow: 1;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    font-family: 'Vijaya', serif; /* Set Vijaya for section titles */
-    color: #6C4F3D;
-    font-size: 2rem;
-    margin-bottom: 10px;
 }
 
 /* Footer Styling */
