@@ -61,15 +61,26 @@ footer p {
 
 /* Add responsiveness */
 @media (max-width: 768px) {
+    /* Ensure header and footer take up full width */
+    header, footer {
+        width: 100%;
+        padding: 15px 0;  /* Adjust padding for smaller screens */
+    }
+
+    /* Adjust header font size for mobile */
     header h1 {
         font-size: 2rem;
     }
 
+    /* Adjust the main content padding and spacing for mobile */
     main {
         padding: 20px;
+        margin-top: 60px;  /* Adjust top margin for mobile */
+        margin-bottom: 60px;  /* Adjust bottom margin for mobile */
     }
 
-    h2 {
-        font-size: 1.5rem;
+    /* Reduce space between paragraphs on mobile */
+    main p {
+        margin-bottom: 30px;
     }
 }
