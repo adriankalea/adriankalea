@@ -16,12 +16,12 @@ body {
     background-repeat: no-repeat;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #f4f4f4; /* Fallback background color before image loads */
     transition: background-color 1s ease-in-out; /* Smooth transition for the background */
+    padding: 0; /* Removed padding to prevent affecting header/footer */
 }
 
 /* Apply custom font to larger text elements */
@@ -34,10 +34,20 @@ header, footer {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     padding: 20px 0;
     text-align: center;
-    position: relative;
+    position: absolute; /* Use absolute positioning for full width */
+    width: 100%; /* Full width */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
     z-index: 2; /* Ensures header/footer stay above other content */
-    width: 100%; /* Ensures they span the full width */
-    box-sizing: border-box; /* Keeps padding from affecting the width */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+header {
+    top: 0; /* Position at the top of the page */
+}
+
+footer {
+    bottom: 0; /* Position at the bottom of the page */
 }
 
 /* Header Title Styling */
