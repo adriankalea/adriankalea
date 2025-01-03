@@ -7,7 +7,7 @@
 
 /* Body Styles - Displaying Background Image */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Default font */
     background: 
         url('https://github.com/adriankalea/adriankalea/raw/main/12.png') no-repeat center center fixed, 
         linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0.1) 10%);
@@ -24,6 +24,11 @@ body {
     transition: background-color 1s ease-in-out; /* Smooth transition for the background */
 }
 
+/* Apply custom font to larger text elements */
+h1, h2, h3, h4, h5, h6, main {
+    font-family: 'Rastanty Cortez', 'Georgia', serif;
+}
+
 /* Header and Footer Styling */
 header, footer {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
@@ -35,10 +40,9 @@ header, footer {
 
 /* Header Title Styling */
 header h1 {
-    font-family: 'Rastanty Cortez', 'Georgia', serif;
-    color: #4A4A4A;
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #4A4A4A;
 }
 
 /* Navigation Menu */
@@ -64,7 +68,7 @@ nav a:hover {
 main {
     padding: 40px 20px;
     flex-grow: 1;
-    font-family: 'Rastanty Cortez', 'Georgia', serif; /* Applying font to the main content */
+    line-height: 1.8; /* Increased line height for better spacing */
 }
 
 /* Large headings in the body section */
