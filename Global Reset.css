@@ -9,7 +9,7 @@
 body {
     font-family: 'Arial', sans-serif; /* Default font */
     background: 
-        url('https://github.com/adriankalea/adriankalea/raw/main/12.png') no-repeat center center fixed, 
+        url('https://github.com/adriankalea/adriankalea/raw/main/12.png') no-repeat center center, /* Fixed on desktop */
         linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0.1) 10%);
     background-size: cover;
     background-position: center;
@@ -67,7 +67,7 @@ footer p {
         padding: 15px 0;  /* Adjust padding for smaller screens */
     }
 
-    /* Adjust header font size for mobile */
+    /* Adjust header title font size for mobile */
     header h1 {
         font-size: 2rem;
     }
@@ -82,5 +82,23 @@ footer p {
     /* Reduce space between paragraphs on mobile */
     main p {
         margin-bottom: 30px;
+    }
+
+    /* For header smaller text in row layout (four items in a row) */
+    header h1 + div {
+        display: flex; /* Make them appear in a row */
+        justify-content: space-evenly; /* Distribute evenly */
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    /* Optional: Style the individual items in the header */
+    header h1 + div > * {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* Change body background from fixed to scroll on mobile */
+    body {
+        background-attachment: scroll; /* Disable fixed background on mobile */
     }
 }
