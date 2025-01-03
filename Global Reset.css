@@ -71,6 +71,11 @@ main {
     line-height: 1.8; /* Increased line height for better spacing */
 }
 
+/* Apply spacing between paragraphs */
+main p {
+    margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
 /* Large headings in the body section */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Rastanty Cortez', 'Georgia', serif;
