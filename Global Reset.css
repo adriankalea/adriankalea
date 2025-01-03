@@ -20,21 +20,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-attachment: fixed;  /* Keeps the background image fixed while scrolling */
-}
-
-header, footer {
-    background-color: rgba(255, 255, 255, 0.8);  /* Semi-transparent white */
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-/* For the bottom fade */
-body {
     background: 
         linear-gradient(to bottom, rgba(244, 241, 225, 0), rgba(244, 241, 225, 1)),  /* Fade effect at the bottom */
-        url('https://github.com/adriankalea/adriankalea/raw/main/pretty%20background.png');
+        url('https://github.com/adriankalea/adriankalea/raw/main/pretty%20background.png'); /* Background image */
 }
 
 /* Header Styling */
