@@ -8,7 +8,7 @@
 /* Body Styles - Displaying Background Image */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('https://github.com/adriankalea/adriankalea/raw/main/pretty%20backgroud.png?raw=true') no-repeat center center fixed;
+    background: url('https://github.com/adriankalea/adriankalea/raw/main/pretty%20backgroud.png') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     color: #333;
