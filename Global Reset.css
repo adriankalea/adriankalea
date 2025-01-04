@@ -24,7 +24,7 @@ body {
 /* Header and Footer Styling */
 header, footer {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    padding: 15px 0;
+    padding: 20px 0; /* Adjusted padding for consistent spacing */
     text-align: center;
     width: 100%;
 }
@@ -42,6 +42,10 @@ nav ul {
     justify-content: center;
     gap: 20px;
     padding: 0;
+}
+
+nav li {
+    display: inline-block; /* Ensures the navigation items are inline */
 }
 
 nav a {
