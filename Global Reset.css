@@ -24,7 +24,7 @@ body {
 /* Header and Footer Styling */
 header, footer {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
     width: 100%;
 }
@@ -59,8 +59,8 @@ nav a:hover {
 main {
     padding: 40px 20px;
     line-height: 1.8;
-    margin-top: 80px;  /* Ensure the main content starts below the header */
-    margin-bottom: 80px;  /* Ensure the content stops before the footer */
+    margin-top: 20px;  /* Reduced spacing between header and body */
+    margin-bottom: 20px;  /* Reduced spacing between body and footer */
 }
 
 /* Apply spacing between paragraphs */
@@ -95,8 +95,8 @@ footer p {
     /* Adjust the main content padding and spacing for mobile */
     main {
         padding: 20px;
-        margin-top: 60px;  /* Adjust top margin for mobile */
-        margin-bottom: 60px;  /* Adjust bottom margin for mobile */
+        margin-top: 20px;  /* Adjust top margin for mobile */
+        margin-bottom: 20px;  /* Adjust bottom margin for mobile */
     }
 
     /* Reduce space between paragraphs on mobile */
