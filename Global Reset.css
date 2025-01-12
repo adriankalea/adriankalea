@@ -24,26 +24,36 @@ body {
     min-height: 100vh; /* Full height of the viewport */
 }
 
-/* Ensuring content area fills available space */
+/* Main Section Styling */
 main {
     flex: 1; /* Takes up remaining space */
     padding: 40px 20px;
     line-height: 1.8;
     margin-top: 20px;  /* Reduced spacing between header and body */
     margin-bottom: 20px;  /* Reduced spacing between body and footer */
+    min-height: calc(100vh - 160px); /* Ensures enough space for footer to push down */
+}
+
+/* Ensure the content sections have enough space */
+#about, #projects, #services, #contact {
+    padding-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
 }
 
 /* Header and Footer Styling */
-header, footer {
+header {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     padding: 20px 0; /* Adjusted padding for consistent spacing */
     text-align: center;
     width: 100%;
-}
-
-/* Footer stays at the bottom of the page */
-footer {
-    margin-top: auto; /* Pushes footer to the bottom */
 }
 
 /* Header Title Styling */
