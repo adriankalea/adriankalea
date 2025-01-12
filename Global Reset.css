@@ -29,13 +29,13 @@ header, footer {
     width: 100%;
 }
 
-/* Remove the underline from the heading link */
+/* Main heading link */
 header h1 a {
-    text-decoration: none; /* Removes the underline */
-    color: #4A4A4A; /* Inherit original color */
+    text-decoration: none; /* Removes underline */
+    color: #4A4A4A; /* Keep the original color */
 }
 
-/* Ensure the link doesn’t show an outline when focused */
+/* Ensuring there's no outline when focused */
 header h1 a:focus {
     outline: none;
 }
@@ -55,13 +55,13 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #6C4F3D;
+    color: #6C4F3D; /* Muted brown/pink tone */
     font-size: 1.1rem;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #B78E8C;
+    color: #B78E8C; /* Soft rose pink on hover */
 }
 
 /* Main Section Styling */
@@ -70,11 +70,6 @@ main {
     line-height: 1.8;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-/* Apply spacing between paragraphs */
-main p {
-    margin-bottom: 40px;
 }
 
 /* Footer Styling */
