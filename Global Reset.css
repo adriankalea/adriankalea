@@ -7,10 +7,10 @@
 
 /* Body Styles - Displaying Background Image */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Default font */
     background: 
-        url('https://github.com/adriankalea/adriankalea/raw/main/12.png') no-repeat center center, 
-        linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0.1) 10%);
+        url('https://github.com/adriankalea/adriankalea/raw/main/12.png') no-repeat center center, /* Fixed on desktop */
+        linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0.1) 10%); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,26 +18,38 @@ body {
     line-height: 1.6;
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Fallback background color before image loads */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+/* Ensuring content area fills available space */
+main {
+    flex: 1; /* Takes up remaining space */
+    padding: 40px 20px;
+    line-height: 1.8;
+    margin-top: 20px;  /* Reduced spacing between header and body */
+    margin-bottom: 20px;  /* Reduced spacing between body and footer */
 }
 
 /* Header and Footer Styling */
 header, footer {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 20px 0; /* Adjusted padding for consistent spacing */
     text-align: center;
     width: 100%;
 }
 
-/* Main heading link */
-header h1 a {
-    text-decoration: none; /* Removes underline */
-    color: #4A4A4A; /* Keep the original color */
+/* Footer stays at the bottom of the page */
+footer {
+    margin-top: auto; /* Pushes footer to the bottom */
 }
 
-/* Ensuring there's no outline when focused */
-header h1 a:focus {
-    outline: none;
+/* Header Title Styling */
+header h1 {
+    font-size: 2.5rem;
+    color: #4A4A4A;
 }
 
 /* Navigation Menu */
@@ -50,7 +62,7 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
+    display: inline-block; /* Ensures the navigation items are inline */
 }
 
 nav a {
@@ -64,16 +76,30 @@ nav a:hover {
     color: #B78E8C; /* Soft rose pink on hover */
 }
 
-/* Main Section Styling */
-main {
-    padding: 40px 20px;
-    line-height: 1.8;
-    margin-top: 20px;
-    margin-bottom: 20px;
+/* Apply spacing between paragraphs */
+main p {
+    margin-bottom: 40px;
 }
 
 /* Footer Styling */
 footer p {
     color: #6C4F3D;
     font-size: 0.9rem;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 20px;
+        margin-top: 20px;  
+        margin-bottom: 20px;  
+    }
+
+    main p {
+        margin-bottom: 30px;
+    }
 }
