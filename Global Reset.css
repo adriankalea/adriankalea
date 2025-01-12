@@ -29,10 +29,22 @@ header, footer {
     width: 100%;
 }
 
-/* Header Title Styling */
+/* Remove the underline from the heading link */
 header h1 a {
-    text-decoration: none; /* Removes the underline from the heading link */
-    color: inherit; /* Makes the text color inherit from the header's text color */
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherit the color from the parent */
+}
+
+/* Remove the purple underline for visited links */
+header h1 a:visited {
+    text-decoration: none; /* Ensures there's no underline after clicking */
+    color: inherit; /* Keeps the color consistent */
+}
+
+/* Ensure the link doesn’t show an outline when focused */
+header h1 a:focus {
+    outline: none; /* Removes the outline focus style */
+    text-decoration: none; /* Prevents any potential underline from appearing */
 }
 /* Navigation Menu */
 nav ul {
