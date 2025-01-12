@@ -7,9 +7,9 @@
 
 /* Body Styles - Displaying Background Image */
 body {
-    font-family: 'Arial', sans-serif; /* Default font */
+    font-family: 'Arial', sans-serif;
     background: 
-        url('https://github.com/adriankalea/adriankalea/raw/main/12.png') no-repeat center center, /* Fixed on desktop */
+        url('https://github.com/adriankalea/adriankalea/raw/main/12.png') no-repeat center center, 
         linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0.1) 10%);
     background-size: cover;
     background-position: center;
@@ -18,13 +18,13 @@ body {
     line-height: 1.6;
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4; /* Fallback background color before image loads */
+    background-color: #f4f4f4;
 }
 
 /* Header and Footer Styling */
 header, footer {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    padding: 20px 0; /* Adjusted padding for consistent spacing */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
     text-align: center;
     width: 100%;
 }
@@ -32,25 +32,12 @@ header, footer {
 /* Remove the underline from the heading link */
 header h1 a {
     text-decoration: none; /* Removes the underline */
-    color: inherit; /* Inherit the color from the parent */
-}
-
-/* Remove the purple underline for visited links */
-header h1 a:visited {
-    text-decoration: none; /* Ensures there's no underline after clicking */
-    color: inherit; /* Keeps the color consistent */
+    color: #4A4A4A; /* Inherit original color */
 }
 
 /* Ensure the link doesn’t show an outline when focused */
 header h1 a:focus {
-    outline: none; /* Removes the outline focus style */
-    text-decoration: none; /* Prevents any potential underline from appearing */
-}
-
-/* Header Title Styling */
-header h1 {
-    font-size: 2.5rem;
-    color: #4A4A4A; /* Keep the original color */
+    outline: none;
 }
 
 /* Navigation Menu */
@@ -63,26 +50,26 @@ nav ul {
 }
 
 nav li {
-    display: inline-block; /* Ensures the navigation items are inline */
+    display: inline-block;
 }
 
 nav a {
     text-decoration: none;
-    color: #6C4F3D; /* Muted brown/pink tone */
+    color: #6C4F3D;
     font-size: 1.1rem;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #B78E8C; /* Soft rose pink on hover */
+    color: #B78E8C;
 }
 
 /* Main Section Styling */
 main {
     padding: 40px 20px;
     line-height: 1.8;
-    margin-top: 20px;  /* Reduced spacing between header and body */
-    margin-bottom: 20px;  /* Reduced spacing between body and footer */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Apply spacing between paragraphs */
@@ -90,72 +77,8 @@ main p {
     margin-bottom: 40px;
 }
 
-/* Large headings in the body section */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rastanty Cortez', 'Georgia', serif;
-}
-
 /* Footer Styling */
 footer p {
     color: #6C4F3D;
     font-size: 0.9rem;
-}
-
-/* Add responsiveness */
-@media (max-width: 768px) {
-    /* Ensure header and footer take up full width */
-    header, footer {
-        width: 100%;
-        padding: 15px 0;  /* Adjust padding for smaller screens */
-    }
-
-    /* Adjust header title font size for mobile */
-    header h1 {
-        font-size: 2rem;
-    }
-
-    /* Adjust the main content padding and spacing for mobile */
-    main {
-        padding: 20px;
-        margin-top: 20px;  /* Adjust top margin for mobile */
-        margin-bottom: 20px;  /* Adjust bottom margin for mobile */
-    }
-
-    /* Reduce space between paragraphs on mobile */
-    main p {
-        margin-bottom: 30px;
-    }
-
-    /* For header smaller text in row layout (four items in a row) */
-    header h1 + nav {
-        display: flex; /* Make them appear in a row */
-        justify-content: space-evenly; /* Distribute evenly */
-        flex-wrap: wrap; /* Allow wrapping */
-        padding: 0;
-    }
-
-    /* Ensure no bullets in nav */
-    nav ul {
-        list-style: none; /* Remove bullets */
-        padding: 0; /* Reset padding */
-    }
-
-    nav li {
-        display: inline-block; /* Display as inline-block for row */
-    }
-
-    nav a {
-        color: #6C4F3D; /* Muted brown/pink tone */
-        font-size: 1rem;
-        text-decoration: none;
-    }
-
-    nav a:hover {
-        color: #B78E8C; /* Soft rose pink on hover */
-    }
-
-    /* Change body background from fixed to scroll on mobile */
-    body {
-        background-attachment: scroll; /* Disable fixed background on mobile */
-    }
 }
