@@ -56,8 +56,9 @@ header {
     width: 100%;
 }
 
-/* Header Title Styling */
+/* Header Title Styling - Change to Georgia or Verdana */
 header h1 {
+    font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for main heading */
     font-size: 2.5rem;
     color: #4A4A4A;
 }
@@ -76,7 +77,7 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from links */
     color: #6C4F3D; /* Muted brown/pink tone */
     font-size: 1.1rem;
     transition: color 0.3s;
@@ -84,6 +85,14 @@ nav a {
 
 nav a:hover {
     color: #B78E8C; /* Soft rose pink on hover */
+}
+
+/* Main Heading Styling for body sections (h2, etc.) */
+main h2 {
+    font-family: 'Georgia', 'Verdana', sans-serif; /* Apply Georgia or Verdana to main headings in body */
+    font-size: 2rem;
+    color: #4A4A4A;
+    margin-bottom: 20px;
 }
 
 /* Apply spacing between paragraphs */
