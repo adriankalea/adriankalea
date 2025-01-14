@@ -76,14 +76,19 @@ nav li {
     display: inline-block; /* Ensures the navigation items are inline */
 }
 
+/* Navigation Link Styling */
 nav a {
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none; /* Remove underline from all states */
     color: #6C4F3D; /* Muted brown/pink tone */
     font-size: 1.1rem;
     transition: color 0.3s;
 }
 
-nav a:hover {
+/* Remove underline on hover, focus, and visited links */
+nav a:hover,
+nav a:focus,
+nav a:visited {
+    text-decoration: none; /* Ensure no underline on hover, focus, and visited */
     color: #B78E8C; /* Soft rose pink on hover */
 }
 
