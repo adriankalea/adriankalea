@@ -84,14 +84,14 @@ nav a {
     transition: color 0.3s;
 }
 
-/* Remove underline on hover, focus, and visited links */
+/* Hover, Focus and Visited Link Styling */
 nav a:hover,
 nav a:focus {
     color: #B78E8C; /* Soft rose pink on hover */
     text-decoration: none; /* Ensure no underline */
 }
 
-/* Fix for visited link color */
+/* Visited link color fix */
 nav a:visited {
     color: #6C4F3D; /* Muted brown color for visited links */
 }
