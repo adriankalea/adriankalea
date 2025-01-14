@@ -88,7 +88,7 @@ nav a {
 nav a:hover,
 nav a:focus,
 nav a:visited {
-    text-decoration: none; /* Ensure no underline on hover, focus, and visited */
+    text-decoration: none !important; /* Ensure no underline on hover, focus, and visited */
     color: #B78E8C; /* Soft rose pink on hover */
 }
 
@@ -97,12 +97,12 @@ main h2 {
     font-family: 'Georgia', 'Verdana', sans-serif; /* Apply Georgia or Verdana to main headings in body */
     font-size: 2rem;
     color: #4A4A4A;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced space below the heading */
 }
 
 /* Apply spacing between paragraphs */
 main p {
-    margin-bottom: 40px;
+    margin-bottom: 20px;  /* Reduced bottom margin to bring paragraphs closer */
 }
 
 /* Footer Styling */
@@ -124,6 +124,6 @@ footer p {
     }
 
     main p {
-        margin-bottom: 30px;
+        margin-bottom: 20px; /* Further reduced margin on smaller screens */
     }
 }
