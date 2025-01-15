@@ -56,6 +56,12 @@ header {
     width: 100%;
 }
 
+/* Remove the purple underline on the h1 link */
+header h1 a {
+    text-decoration: none; /* Ensure no underline */
+    color: #4A4A4A; /* Keep the text color the same as the heading */
+}
+
 /* Header Title Styling - Change to Georgia or Verdana */
 header h1 {
     font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for main heading */
@@ -107,7 +113,7 @@ main h2 {
 
 /* Apply spacing between paragraphs */
 main p {
-    margin-bottom: 10px;  /* Reduced bottom margin to bring paragraphs closer */
+    margin-bottom: 5px;  /* Further reduced bottom margin for closer paragraphs */
 }
 
 /* Footer Styling */
@@ -129,6 +135,6 @@ footer p {
     }
 
     main p {
-        margin-bottom: 10px; /* Further reduced margin on smaller screens */
+        margin-bottom: 5px; /* Further reduced margin on smaller screens */
     }
 }
