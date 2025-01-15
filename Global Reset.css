@@ -94,6 +94,7 @@ nav a:focus {
 /* Visited link color fix */
 nav a:visited {
     color: #6C4F3D; /* Muted brown color for visited links */
+    text-decoration: none; /* Remove purple underline */
 }
 
 /* Main Heading Styling for body sections (h2, etc.) */
@@ -106,7 +107,7 @@ main h2 {
 
 /* Apply spacing between paragraphs */
 main p {
-    margin-bottom: 20px;  /* Reduced bottom margin to bring paragraphs closer */
+    margin-bottom: 10px;  /* Reduced bottom margin to bring paragraphs closer */
 }
 
 /* Footer Styling */
@@ -128,6 +129,6 @@ footer p {
     }
 
     main p {
-        margin-bottom: 20px; /* Further reduced margin on smaller screens */
+        margin-bottom: 10px; /* Further reduced margin on smaller screens */
     }
 }
