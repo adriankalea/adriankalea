@@ -89,7 +89,7 @@ nav a {
     text-decoration: none; /* Remove underline from all states */
     color: #6C4F3D; /* Muted brown color for normal state */
     font-size: 1.1rem;
-    transition: color 0.3s;
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 /* Hover, Focus and Visited Link Styling */
