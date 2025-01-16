@@ -56,11 +56,13 @@ header {
     width: 100%;
 }
 
-/* Remove the purple underline on the link inside the header title */
+/* Header Title Styling - Remove underline for the link */
 header h1 a {
-    text-decoration: none !important;  /* Remove underline */
-    color: #4A4A4A !important;  /* Keep color of text for the link */
+    text-decoration: none !important;  /* Ensures no underline */
+    color: #4A4A4A !important;  /* Color for the link */
+    border: none; /* Ensure no borders on the link */
 }
+
 
 /* Header Title Styling - Change to Georgia or Verdana */
 header h1 {
