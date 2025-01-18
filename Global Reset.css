@@ -61,18 +61,18 @@ header a {
     text-decoration: none !important;  /* Ensure no underline for both links */
 }
 
-/* Styling for "Anna Johnson" link */
+/* Styling for "Adriana Smith" link */
 header h2 {
     font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for the new title */
-    font-size: 3rem; /* Larger font size for "Anna Johnson" */
+    font-size: 2.8rem; /* Slightly smaller to bring it closer to h1 */
     color: #4A4A4A;
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* Reduced space between "Anna Johnson" and "Welcome to My Creative Portfolio" */
 }
 
 /* Main Heading Styling for "Welcome to My Creative Portfolio" */
 header h1 {
     font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for the main heading */
-    font-size: 2.5rem; /* Smaller than "Anna Johnson" */
+    font-size: 2.2rem; /* Smaller than before */
     color: #4A4A4A;
 }
 
