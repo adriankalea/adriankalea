@@ -56,18 +56,23 @@ header {
     width: 100%;
 }
 
-/* Header Title Styling - Remove underline for the link */
-header h1 a {
-    text-decoration: none !important;  /* Ensures no underline */
-    color: #4A4A4A !important;  /* Color for the link */
-    border: none; /* Ensure no borders on the link */
+/* Remove underline for the link in header */
+header a {
+    text-decoration: none !important;  /* Ensure no underline for both links */
 }
 
+/* Styling for "Anna Johnson" link */
+header h2 {
+    font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for the new title */
+    font-size: 3rem; /* Larger font size for "Anna Johnson" */
+    color: #4A4A4A;
+    margin-bottom: 5px;
+}
 
-/* Header Title Styling - Change to Georgia or Verdana */
+/* Main Heading Styling for "Welcome to My Creative Portfolio" */
 header h1 {
-    font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for main heading */
-    font-size: 2.5rem;
+    font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for the main heading */
+    font-size: 2.5rem; /* Smaller than "Anna Johnson" */
     color: #4A4A4A;
 }
 
@@ -81,7 +86,7 @@ nav ul {
 }
 
 nav li {
-    display: inline-block; /* Ensures the navigation items are inline */
+    display: inline-block;
 }
 
 /* Navigation Link Styling */
@@ -89,7 +94,7 @@ nav a {
     text-decoration: none; /* Remove underline from all states */
     color: #6C4F3D; /* Muted brown color for normal state */
     font-size: 1.1rem;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: color 0.3s ease;
 }
 
 /* Hover, Focus and Visited Link Styling */
@@ -126,6 +131,10 @@ footer p {
 
 /* Add responsiveness */
 @media (max-width: 768px) {
+    header h2 {
+        font-size: 2.5rem; /* Smaller "Anna Johnson" on smaller screens */
+    }
+
     header h1 {
         font-size: 2rem;
     }
