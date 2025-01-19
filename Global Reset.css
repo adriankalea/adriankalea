@@ -66,7 +66,7 @@ header h2 {
     font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for the new title */
     font-size: 2.8rem; /* Slightly smaller to bring it closer to h1 */
     color: #4A4A4A;
-    margin-bottom: 3px; /* Reduced space between "Adriana Smith" and "Welcome to My Creative Portfolio" */
+    margin-bottom: 0px; /* Reduced space between "Adriana Smith" and "Welcome to My Creative Portfolio" */
 }
 
 /* Main Heading Styling for "Welcome to My Creative Portfolio" */
