@@ -7,9 +7,9 @@
 
 /* Body Styles - Displaying Background Image */
 body {
-    font-family: 'Arial', sans-serif; /* Default font */
+    font-family: 'Arial', sans-serif;
     background: 
-        url('https://github.com/adriankalea/adriankalea/raw/main/12.png') no-repeat center center, /* Fixed on desktop */
+        url('https://github.com/adriankalea/adriankalea/raw/main/12.png') no-repeat center center,
         linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0.1) 10%); 
     background-size: cover;
     background-position: center;
@@ -18,62 +18,58 @@ body {
     line-height: 1.6;
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4; /* Fallback background color before image loads */
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full height of the viewport */
+    min-height: 100vh;
 }
 
 /* Main Section Styling */
 main {
-    flex: 1; /* Takes up remaining space */
+    flex: 1;
     padding: 40px 20px;
     line-height: 1.8;
-    margin-top: 20px;  /* Reduced spacing between header and body */
-    margin-bottom: 20px;  /* Reduced spacing between body and footer */
-    min-height: calc(100vh - 160px); /* Ensures enough space for footer to push down */
-}
-
-/* Ensure the content sections have enough space */
-#about, #projects, #services, #contact {
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: calc(100vh - 160px);
 }
 
 /* Footer Styling */
 footer {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    margin-top: auto; /* Pushes footer to the bottom */
+    margin-top: auto;
 }
 
 /* Header and Footer Styling */
 header {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    padding: 20px 0; /* Adjusted padding for consistent spacing */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0; /* Reduced padding for header */
     text-align: center;
     width: 100%;
 }
 
 /* Remove underline for the link in header */
 header a {
-    text-decoration: none !important;  /* Ensure no underline for both links */
+    text-decoration: none !important;
 }
 
 /* Styling for "Adriana Smith" link */
 header h2 {
-    font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for the new title */
-    font-size: 2.8rem; /* Slightly smaller to bring it closer to h1 */
+    font-family: 'Georgia', 'Verdana', sans-serif;
+    font-size: 2.6rem; /* Adjusted size for a slightly smaller "Adriana Smith" */
     color: #4A4A4A;
-    margin-bottom: 0px; /* Reduced space between "Adriana Smith" and "Welcome to My Creative Portfolio" */
+    margin-bottom: 0; /* Removed space below "Adriana Smith" */
 }
 
 /* Main Heading Styling for "Welcome to My Creative Portfolio" */
 header h1 {
-    font-family: 'Georgia', 'Verdana', sans-serif; /* Georgia or Verdana for the main heading */
-    font-size: 2.2rem; /* Smaller than before */
+    font-family: 'Georgia', 'Verdana', sans-serif;
+    font-size: 1.8rem; /* Smaller font size for "Welcome to My Creative Portfolio" */
     color: #4A4A4A;
+    margin-top: 5px; /* Reduced space between "Adriana Smith" and "Welcome to My Creative Portfolio" */
 }
 
 /* Navigation Menu */
@@ -81,8 +77,9 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px; /* Reduced space between navigation items */
     padding: 0;
+    margin-top: 10px; /* Reduced space between h1 and navigation */
 }
 
 nav li {
@@ -91,36 +88,34 @@ nav li {
 
 /* Navigation Link Styling */
 nav a {
-    text-decoration: none; /* Remove underline from all states */
-    color: #6C4F3D; /* Muted brown color for normal state */
-    font-size: 1.1rem;
+    text-decoration: none;
+    color: #6C4F3D;
+    font-size: 1rem; /* Slightly smaller font for navigation links */
     transition: color 0.3s ease;
 }
 
 /* Hover, Focus and Visited Link Styling */
 nav a:hover,
 nav a:focus {
-    color: #B78E8C; /* Soft rose pink on hover */
-    text-decoration: none; /* Ensure no underline */
+    color: #B78E8C;
+    text-decoration: none;
 }
 
-/* Visited link color fix */
 nav a:visited {
-    color: #6C4F3D; /* Muted brown color for visited links */
-    text-decoration: none; /* Remove purple underline */
+    color: #6C4F3D;
+    text-decoration: none;
 }
 
 /* Main Heading Styling for body sections (h2, etc.) */
 main h2 {
-    font-family: 'Georgia', 'Verdana', sans-serif; /* Apply Georgia or Verdana to main headings in body */
+    font-family: 'Georgia', 'Verdana', sans-serif;
     font-size: 2rem;
     color: #4A4A4A;
-    margin-bottom: 5px; /* Reduced space below the heading */
+    margin-bottom: 5px;
 }
 
-/* Apply spacing between paragraphs */
 main p {
-    margin-bottom: 3px !important;  /* Further reduced bottom margin for closer paragraphs */
+    margin-bottom: 3px !important;
 }
 
 /* Footer Styling */
@@ -132,11 +127,11 @@ footer p {
 /* Add responsiveness */
 @media (max-width: 768px) {
     header h2 {
-        font-size: 2.5rem; /* Smaller "Anna Johnson" on smaller screens */
+        font-size: 2.2rem; /* Smaller "Adriana Smith" on smaller screens */
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 1.6rem; /* Smaller "Welcome to My Creative Portfolio" on smaller screens */
     }
 
     main {
@@ -146,6 +141,6 @@ footer p {
     }
 
     main p {
-        margin-bottom: 3px !important; /* Further reduced margin on smaller screens */
+        margin-bottom: 3px !important;
     }
 }
