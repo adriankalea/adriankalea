@@ -67,6 +67,25 @@ nav a {
     transition: color 0.3s ease;
 }
 
+ /* Unvisited Link */
+    nav a:link {
+            color: #6C4F3D;
+        }
+
+        /* Visited Link */
+        nav a:visited {
+            color: #6C4F3D;
+        }
+
+        /* Mouse Over Link */
+        nav a:hover {
+            color: #B78E8C;
+        }
+
+        /* Click on Link */
+        nav a:active {
+            color: #B78E8C;
+        }
 /* Hover and Focus Link Styling */
 nav a:hover,
 nav a:focus {
