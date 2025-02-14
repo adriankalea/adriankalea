@@ -73,6 +73,30 @@ nav a:focus {
     color: #B78E8C;
 }
 
+/* unvisited link */
+a:link { 
+    link:
+    url ('adriankalsmith@gmail.com')
+    url ('https://www.linkedin.com/in/adriana-l-s-4777b41b7/')
+  color: #ECB7BF;
+}
+
+/* visited link */
+a:visited { 
+     link:
+     url ('adriankalsmith@gmail.com')
+     url ('https://www.linkedin.com/in/adriana-l-s-4777b41b7/')
+  color: white;
+}
+
+/* mouse over link */
+a:hover { 
+     link:
+     url ('adriankalsmith@gmail.com')
+     url ('https://www.linkedin.com/in/adriana-l-s-4777b41b7/')
+  color: white;
+}
+
 /* Main Section Styling */
 main {
     flex: 1;
