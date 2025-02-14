@@ -74,17 +74,18 @@ nav a:focus {
 }
 
 /* unvisited link */
-a:link {
+
+a:link { href="mailto:adriankalsmith@gmail.com"
   color: #ECB7BF;
 }
 
 /* visited link */
-a:visited {
+a:visited { href="mailto:adriankalsmith@gmail.com"
   color: white;
 }
 
 /* mouse over link */
-a:hover {
+a:hover { href="mailto:adriankalsmith@gmail.com"
   color: white;
 }
 
