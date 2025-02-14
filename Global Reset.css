@@ -73,6 +73,26 @@ nav a:focus {
     color: #B78E8C;
 }
 
+/* unvisited link */
+a:link {
+  color: hotpink;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
 /* Main Section Styling */
 main {
     flex: 1;
